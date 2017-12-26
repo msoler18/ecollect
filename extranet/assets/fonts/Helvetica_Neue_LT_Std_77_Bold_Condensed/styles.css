@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-BdCn';
+  src: url('HelveticaNeueLTStd-BdCn.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueLTStd-BdCn.otf')  format('opentype'),
+	     url('HelveticaNeueLTStd-BdCn.woff') format('woff'), url('HelveticaNeueLTStd-BdCn.ttf')  format('truetype'), url('HelveticaNeueLTStd-BdCn.svg#HelveticaNeueLTStd-BdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,197 @@
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" name="ExtranetService" targetNamespace="http://tempuri.org/">
+<wsdl:types>
+<xsd:schema targetNamespace="http://tempuri.org/Imports">
+<xsd:import schemaLocation="http://pruebas.sincoerp.com/SincoProksol_PRBINT/ERPNet/CBR/Comunicaciones/WebServices/Extranet/ExtranetService.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+<xsd:import schemaLocation="http://pruebas.sincoerp.com/SincoProksol_PRBINT/ERPNet/CBR/Comunicaciones/WebServices/Extranet/ExtranetService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+<xsd:import schemaLocation="http://pruebas.sincoerp.com/SincoProksol_PRBINT/ERPNet/CBR/Comunicaciones/WebServices/Extranet/ExtranetService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Sinco.ERP.CBR.Comunicaciones.WebServices.Extranet"/>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="IExtranetService_Login_InputMessage">
+<wsdl:part name="parameters" element="tns:Login"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Login_OutputMessage">
+<wsdl:part name="parameters" element="tns:LoginResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_CambioClave_InputMessage">
+<wsdl:part name="parameters" element="tns:CambioClave"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_CambioClave_OutputMessage">
+<wsdl:part name="parameters" element="tns:CambioClaveResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Proyectos_InputMessage">
+<wsdl:part name="parameters" element="tns:Proyectos"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Proyectos_OutputMessage">
+<wsdl:part name="parameters" element="tns:ProyectosResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Inmuebles_InputMessage">
+<wsdl:part name="parameters" element="tns:Inmuebles"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Inmuebles_OutputMessage">
+<wsdl:part name="parameters" element="tns:InmueblesResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Cartera_InputMessage">
+<wsdl:part name="parameters" element="tns:Cartera"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Cartera_OutputMessage">
+<wsdl:part name="parameters" element="tns:CarteraResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Tramites_InputMessage">
+<wsdl:part name="parameters" element="tns:Tramites"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Tramites_OutputMessage">
+<wsdl:part name="parameters" element="tns:TramitesResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Comprador_InputMessage">
+<wsdl:part name="parameters" element="tns:Comprador"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_Comprador_OutputMessage">
+<wsdl:part name="parameters" element="tns:CompradorResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_InmuebleDetalle_InputMessage">
+<wsdl:part name="parameters" element="tns:InmuebleDetalle"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_InmuebleDetalle_OutputMessage">
+<wsdl:part name="parameters" element="tns:InmuebleDetalleResponse"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_ProyectoDetalle_InputMessage">
+<wsdl:part name="parameters" element="tns:ProyectoDetalle"/>
+</wsdl:message>
+<wsdl:message name="IExtranetService_ProyectoDetalle_OutputMessage">
+<wsdl:part name="parameters" element="tns:ProyectoDetalleResponse"/>
+</wsdl:message>
+
+
+
+<wsdl:portType name="IExtranetService">
+<wsdl:operation name="Login">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Login" message="tns:IExtranetService_Login_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/LoginResponse" message="tns:IExtranetService_Login_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="CambioClave">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/CambioClave" message="tns:IExtranetService_CambioClave_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/CambioClaveResponse" message="tns:IExtranetService_CambioClave_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="Proyectos">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Proyectos" message="tns:IExtranetService_Proyectos_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/ProyectosResponse" message="tns:IExtranetService_Proyectos_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="Inmuebles">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Inmuebles" message="tns:IExtranetService_Inmuebles_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/InmueblesResponse" message="tns:IExtranetService_Inmuebles_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="Cartera">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Cartera" message="tns:IExtranetService_Cartera_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/CarteraResponse" message="tns:IExtranetService_Cartera_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="Tramites">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Tramites" message="tns:IExtranetService_Tramites_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/TramitesResponse" message="tns:IExtranetService_Tramites_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="Comprador">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/Comprador" message="tns:IExtranetService_Comprador_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/CompradorResponse" message="tns:IExtranetService_Comprador_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="InmuebleDetalle">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/InmuebleDetalle" message="tns:IExtranetService_InmuebleDetalle_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/InmuebleDetalleResponse" message="tns:IExtranetService_InmuebleDetalle_OutputMessage"/>
+</wsdl:operation>
+<wsdl:operation name="ProyectoDetalle">
+<wsdl:input wsaw:Action="http://tempuri.org/IExtranetService/ProyectoDetalle" message="tns:IExtranetService_ProyectoDetalle_InputMessage"/>
+<wsdl:output wsaw:Action="http://tempuri.org/IExtranetService/ProyectoDetalleResponse" message="tns:IExtranetService_ProyectoDetalle_OutputMessage"/>
+</wsdl:operation>
+</wsdl:portType>
+
+
+
+<wsdl:binding name="BasicHttpBinding_IExtranetService" type="tns:IExtranetService">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="Login">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Login" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="CambioClave">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/CambioClave" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Proyectos">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Proyectos" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Inmuebles">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Inmuebles" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Cartera">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Cartera" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Tramites">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Tramites" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Comprador">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/Comprador" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="InmuebleDetalle">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/InmuebleDetalle" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="ProyectoDetalle">
+<soap:operation soapAction="http://tempuri.org/IExtranetService/ProyectoDetalle" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="ExtranetService">
+<wsdl:port name="BasicHttpBinding_IExtranetService" binding="tns:BasicHttpBinding_IExtranetService">
+<soap:address location="http://pruebas.sincoerp.com/SincoProksol_PRBINT/ERPNet/CBR/Comunicaciones/WebServices/Extranet/ExtranetService.svc"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

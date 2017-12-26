@@ -1,0 +1,19 @@
+[31-Mar-2015 09:59:57 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/prucolor/public_html/extranet_proksol/logout.php on line 2
+[31-Mar-2015 10:00:02 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/prucolor/public_html/extranet_proksol/logout.php on line 2
+[02-Apr-2015 21:01:22 America/Chicago] PHP Warning:  session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/prucolor/public_html/extranet_proksol/index.php on line 3
+[02-Apr-2015 21:01:22 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/prucolor/public_html/extranet_proksol/index.php:3) in /home/prucolor/public_html/extranet_proksol/index.php on line 3
+[02-Apr-2015 21:01:22 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/prucolor/public_html/extranet_proksol/index.php:3) in /home/prucolor/public_html/extranet_proksol/index.php on line 3
+[14-Apr-2015 10:50:39 America/Chicago] PHP Parse error:  syntax error, unexpected ''Porcent' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/prucolor/public_html/proksol/extranet/extranet.php on line 92
+[14-Apr-2015 15:40:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/prucolor/public_html/proksol/extranet/index.php:6) in /home/prucolor/public_html/proksol/extranet/index.php on line 11
+[14-Apr-2015 16:05:19 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home/prucolor/public_html/proksol/extranet/index.php on line 11
+[04-Aug-2015 10:11:58 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/prucolor/public_html/proksol/vendor/db.php on line 25
+[04-Aug-2015 10:11:58 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/prucolor/public_html/proksol/vendor/db.php on line 25
+[04-Aug-2015 10:12:05 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/prucolor/public_html/proksol/vendor/db.php on line 25
+[04-Aug-2015 10:12:05 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/prucolor/public_html/proksol/vendor/db.php on line 25
+[04-Aug-2015 14:25:03 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home/prucolor/public_html/proksol/extranet/index.php on line 126
+[04-Aug-2015 14:40:54 America/Chicago] PHP Warning:  Unterminated comment starting line 334 in /home/prucolor/public_html/proksol/extranet/index.php on line 334
+[04-Aug-2015 14:40:54 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/prucolor/public_html/proksol/extranet/index.php:334) in /home/prucolor/public_html/proksol/extranet/index.php on line 3
+[23-Oct-2015 16:09:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/prucolor/public_html/proksol/extranet/index.php on line 105
+[03-Nov-2015 14:22:58 America/Chicago] PHP Parse error:  syntax error, unexpected ''id_usu' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/prucolor/public_html/proksol/extranet/extranet.php on line 146
+[28-Jun-2016 14:10:25 America/Chicago] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/proksol/public_html/vendor/db.php on line 25
+[28-Jun-2016 14:10:26 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/proksol/public_html/vendor/db.php on line 25
